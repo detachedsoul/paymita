@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
@@ -28,11 +30,15 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <link rel="icon" href="favicon.svg" />
+                <link rel="icon" href="/favicon.svg" />
             </head>
 
-            <body className={`${urbanist.className} text-base antialiased`}>
+            <body className={`${urbanist.className} text-base leading-[160%] text-[#384860] antialiased text-balance selection:bg-brand-dark-purple selection:text-white scroll-smooth`}>
+                <Header />
+
                 {children}
+
+                <Footer />
             </body>
         </html>
     );

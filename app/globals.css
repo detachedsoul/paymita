@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 @layer utilities {
+    img {
+        @apply object-cover object-center
+    }
+
     .text-balance {
         text-wrap: balance;
+    }
+
+    .header {
+        @apply text-3xl font-bold leading-[120%] text-brand-dark-purple lg:text-5xl lg:leading-[120%]
     }
 }
