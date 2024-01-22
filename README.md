@@ -1,1 +1,1 @@
-# Paymita Webiste
+# Paymita Website

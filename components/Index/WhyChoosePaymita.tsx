@@ -28,7 +28,7 @@ const WhyChoosePaymita = (): JSX.Element => {
 
     return (
         <section className="grid gap-4 lg:grid-cols-2 lg:gap-0">
-            <div className="grid gap-8 py-8 px-4 lg:px-20">
+            <div className="grid gap-8 py-8 px-4 lg:px-20 lg:pb-10">
                 <h2 className="header text-center lg:text-left">
                     Why Choose Paymita
                 </h2>

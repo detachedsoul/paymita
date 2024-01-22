@@ -10,7 +10,7 @@ const Footer = (): JSX.Element => {
                     <Image className="h-8" src={Logo} alt="Paymita" />
 
                     <p className="text-[#384860] leading-[160%]">
-                        Lorem ipsum dolor sit amet consectetur. Nisi neque et suscipit volutpat viverra vitae fames urna nunc. Non netus odio ac metus nec adipiscing. Pharetra sit velit vel.
+                        Paymita, a subsidiary of Mita Technologies Limited (Company Registration No. 7013140), We are a bill payment and virtual card issuance company. We provide swift and secure services through our authorized partners.
                     </p>
                 </div>
 

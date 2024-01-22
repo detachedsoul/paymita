@@ -8,9 +8,10 @@ import PayBillsIcon from "@/assets/img/pay-bills-icon.svg";
 import VirtualCardIcon from "@/assets/img/virtual-card-icon.svg";
 import EducationIcon from "@/assets/img/education-icon.svg";
 import BettingIcon from "@/assets/img/betting-icon.svg";
+import { useId } from "react";
 
 type services = {
-    id: number,
+    id: string,
     icon: string,
     header: string,
     cardBody: string,
@@ -22,28 +23,28 @@ type services = {
 const Services = (): JSX.Element => {
     const services: services[] = [
         {
-            id: 1,
+            id: useId(),
             icon: AirtimeToCashIcon,
             header: "Instant Airtime to Cash",
             cardBody: "Buy airtime for your mobile phone on the go, ensuring you're always connected without hassle.",
             buttonText: "Get started",
         },
         {
-            id: 2,
+            id: useId(),
             icon: BuyDataIcon,
             header: "Buy Data",
             cardBody: "Never run out of data again, buy data speedily and seamlessly.",
             buttonText: "Get started",
         },
         {
-            id: 3,
+            id: useId(),
             icon: PayBillsIcon,
             header: "Pay Bills",
             cardBody: "Pay bills without stress, swiftly and seamlessly pay your bills with Paymita.",
             buttonText: "Get started",
         },
         {
-            id: 4,
+            id: useId(),
             icon: VirtualCardIcon,
             header: "Swift Virtual Card",
             cardBody: "Safely make digital payments with our virtual cards.",
@@ -51,17 +52,17 @@ const Services = (): JSX.Element => {
             isScrollTrigger: true
         },
         {
-            id: 5,
+            id: useId(),
             icon: EducationIcon,
             header: "Education",
-            cardBody: "Easily manage and pay for educational expenses, including tuition fees and related costs.",
+            cardBody: "Generate Result Checker Pins for instant use on the Paymita app (WAEC, NECO, NABTEB, etc).",
             buttonText: "Get started",
         },
         {
-            id: 5,
+            id: useId(),
             icon: BettingIcon,
             header: "Betting",
-            cardBody: "Seamlessly deposit and withdraw from any betting platform.",
+            cardBody: "Easily deposit and withdraw funds from any betting platform without any hassle.",
             buttonText: "Get started",
         },
     ];
@@ -70,26 +71,28 @@ const Services = (): JSX.Element => {
         <section className="grid gap-16 py-12 bg-[#f8f8fa] px-4 lg:px-20">
             <div className="grid gap-4 text-center w-4/5 mx-auto">
                 <h2 className="header">
-                    Trusted by thousands of users from around the world
+                    Fast & secure bill payment solution, trusted by thousand of users
                 </h2>
 
                 <p className="text-brand-light-purple">
-                    Experience the freedom of managing your money seamlessly, whether you’re at home or on the go. Your finances, your way, anytime, anywhere.
+                    Experience the swiftest and most secure bill payment solution, earning the trust of thousands and helping them manage their finance on the go.
                 </p>
             </div>
 
             <div className="grid gap-4 lg:grid-cols-3">
                 {services.map((service: services): JSX.Element => (
-                    <div className="rounded-[1.25rem] bg-white p-8 grid gap-4 shadow-3xl transition-colors duration-300 ease-in-out group/card hover:bg-brand-dark-purple" key={service.id}>
-                        <Image className="w-12" src={service.icon} alt={service.header} />
+                    <div className="rounded-[1.25rem] bg-white p-8 grid gap-10 shadow-3xl transition-colors duration-300 ease-in-out group/card hover:bg-brand-dark-purple" key={service.id}>
+                        <div className="grid gap-4">
+                            <Image className="w-12" src={service.icon} alt={service.header} />
 
-                        <h3 className="text-brand-dark-purple font-semibold text-xl group-hover/card:text-white lg:text-2xl">
-                            {service.header}
-                        </h3>
+                            <h3 className="text-brand-dark-purple font-semibold text-xl group-hover/card:text-white lg:text-2xl">
+                                {service.header}
+                            </h3>
 
-                        <p className="leading-[140%] group-hover/card:text-[#f8f8fa]">
-                            {service.cardBody}
-                        </p>
+                            <p className="leading-[140%] group-hover/card:text-[#f8f8fa]">
+                                {service.cardBody}
+                            </p>
+                        </div>
 
                         <div className="inline-block w-auto">
                             {service.isScrollTrigger ? (

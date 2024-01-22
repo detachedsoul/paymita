@@ -13,7 +13,7 @@ const HeroSection = (): JSX.Element => {
                 </h1>
 
                 <p>
-                    We offer you the easiest and most efficient way to handle your financial transactions. From converting airtime to cash to making seamless payments, experience simplicity like never before.
+                    Experience unparalleled simplicity in managing your financial transactions — from converting airtime to cash to seamless bill payments and betting wallet funding.
                 </p>
 
                 <div className="flex items-center gap-4">
@@ -28,7 +28,7 @@ const HeroSection = (): JSX.Element => {
             </div>
 
             <div className="lg:col-span-7">
-                <Image className="w-full h-full" src={IndexHeroImage} alt="Paymita - Your Gateway to Effortless & Swift Payments." />
+                <Image src={IndexHeroImage} alt="Paymita - Your Gateway to Effortless & Swift Payments." priority fetchPriority="high" />
             </div>
         </div>
     );

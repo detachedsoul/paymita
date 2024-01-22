@@ -54,7 +54,7 @@ const NavLinks = (): JSX.Element => {
                 <ul className="flex flex-col gap-2 lg:gap-8 lg:flex-row lg:justify-between">
                     {navLinks.map((navLink: navLinks): JSX.Element => (
                         <li key={navLink.id}>
-                            <Link className={`transition-colors duration-300 ease-in-out p-4 block border-b-[1.5px] ${pathname === navLink.route ? 'font-bold text-brand-light-blue lg:font-medium lg:text-brand-dark-purple lg:border-brand-dark-purple' : 'text-brand-light-purple border-transparent hover:text-brand-light-blue hover:font-bold lg:font-medium'} lg:hover:text-brand-dark-purple lg:hover:border-brand-dark-purple lg:font-medium lg:p-2`} href={navLink.route}>
+                            <Link className={`transition-colors duration-300 ease-in-out p-4 block border-b-[1.5px] ${pathname === navLink.route ? 'font-bold text-brand-light-blue lg:text-brand-dark-purple lg:border-brand-dark-purple' : 'text-brand-light-purple border-transparent hover:text-brand-light-blue hover:font-bold lg:font-medium'} lg:hover:text-brand-dark-purple lg:hover:border-brand-dark-purple lg:p-2`} href={navLink.route}>
                                 {navLink.routeName}
                             </Link>
                         </li>
