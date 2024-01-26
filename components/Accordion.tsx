@@ -22,7 +22,7 @@ const Accordion = ({ question, answer }: {question: string, answer: JSX.Element}
                 {isExpanded ? <MinusIcon /> : <PlusIcon />}
             </button>
 
-            <div className={`transition-all ease-linear overflow-hidden ${isExpanded ? 'max-h-[500px]' : 'max-h-0'}`}>
+            <div className={`transition-all h-full ease-linear overflow-hidden ${isExpanded ? 'max-h-[500px]' : 'max-h-0'}`}>
                 {answer}
             </div>
         </div>
