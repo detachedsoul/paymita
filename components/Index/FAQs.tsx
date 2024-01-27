@@ -3,7 +3,7 @@ import Accordion from "@/components/Accordion";
 
 const FAQs = (): JSX.Element => {
     return (
-        <section className="grid gap-8 items-center bg-[#f8f8fa] py-12 px-4 lg:px-20 lg:grid-cols-12">
+        <section className="grid gap-8 items-center bg-[#f8f8fa] py-12 px-4 scroll-mt-14 lg:scroll-mt-[4.5rem] lg:px-20 lg:grid-cols-12" id="faqs">
             <div className="grid gap-10 lg:col-span-5">
                 <div className="grid gap-4">
                     <h2 className="header">

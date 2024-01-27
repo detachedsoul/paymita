@@ -31,6 +31,10 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <link rel="icon" href="/favicon.svg" />
+                <meta
+                    property="og:image"
+                    content="/favicon.svg"
+                />
             </head>
 
             <body className={`${urbanist.className} text-base leading-[160%] text-[#384860] antialiased text-balance selection:bg-brand-dark-purple selection:text-white scroll-smooth`}>

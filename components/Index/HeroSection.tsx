@@ -6,7 +6,7 @@ import DownloadAndroid from "@/assets/img/download-android.svg";
 
 const HeroSection = (): JSX.Element => {
     return (
-        <div className="grid items-center bg-[#e1f3ff] lg:grid-cols-12">
+        <div className="grid items-center bg-[#e1f3ff] scroll-mt-14 lg:scroll-mt-[4.5rem] lg:grid-cols-12" id="about">
             <div className="py-8 px-4 grid gap-4 lg:col-span-5 lg:pl-20 lg:py-0 lg:pr-0">
                 <h1 className="text-[2.5rem] text-brand-dark-purple font-bold leading-[110%] lg:text-[3.5rem]">
                     Your Gateway to Effortless & Swift Payments.

@@ -68,7 +68,7 @@ const Services = (): JSX.Element => {
     ];
 
     return (
-        <section className="grid gap-16 py-12 bg-[#f8f8fa] px-4 lg:px-20">
+        <section className="grid gap-16 py-12 bg-[#f8f8fa] scroll-mt-14 lg:scroll-mt-[4.5rem] px-4 lg:px-20" id="services">
             <div className="grid gap-4 text-center w-4/5 mx-auto">
                 <h2 className="header">
                     Fast & secure bill payment solution, trusted by thousand of users
