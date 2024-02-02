@@ -20,16 +20,20 @@ const Footer = (): JSX.Element => {
                     </h3>
 
                     <div className="grid gap-4">
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/about">
                             About
                         </Link>
 
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/contact">
                             Contact
                         </Link>
 
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/blog">
                             Blog
+                        </Link>
+
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/faqs">
+                            FAQs
                         </Link>
                     </div>
                 </div>
@@ -40,15 +44,15 @@ const Footer = (): JSX.Element => {
                     </h3>
 
                     <div className="grid gap-4">
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/product/buy-airtime">
                             Buy airtime
                         </Link>
 
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/product/pay-bills">
                             Pay bills
                         </Link>
 
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/product/education-payment">
                             Educational payment
                         </Link>
                     </div>
@@ -60,11 +64,11 @@ const Footer = (): JSX.Element => {
                     </h3>
 
                     <div className="grid gap-4">
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/legal/terms-and-conditions">
                             Terms & conditions
                         </Link>
 
-                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                        <Link className="text-brand-light-purple/75 text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/legal/privacy-policy">
                             Privacy policy
                         </Link>
                     </div>
@@ -73,15 +77,15 @@ const Footer = (): JSX.Element => {
 
             <div className="flex flex-col gap-8 pt-12 pb-16 justify-between items-center lg:flex-row">
                 <div className="flex items-center gap-10">
-                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/legals/terms-and-conditions">
                         Terms
                     </Link>
 
-                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/legal/privacy-policy">
                         Privacy policy
                     </Link>
 
-                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="">
+                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/legal/cookies">
                         Cookies
                     </Link>
                 </div>

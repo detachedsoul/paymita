@@ -38,9 +38,9 @@ const HowItWorks = (): JSX.Element => {
         <section className="grid gap-4 items-center py-12 bg-white px-4 lg:grid-cols-2 lg:px-20">
             <Image className="text-center ml-[2.5%] lg:ml-0 lg:text-left" src={IndexHowItWork} alt="How It Works" />
 
-            <div className="grid gap-14 text-center lg:text-left">
+            <div className="grid gap-14">
                 <div className="grid gap-10">
-                    <div className="grid gap-2">
+                    <div className="grid gap-2 text-center lg:text-left">
                         <h2 className="header">
                             How It Works
                         </h2>

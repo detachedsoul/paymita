@@ -2,19 +2,17 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useId } from "react";
+import { useState, useId, useEffect } from "react";
 import { MenuIcon, XIcon } from "lucide-react";
 
 type navLinks = {
     id: string,
     routeName: string,
-    route?: string;
-    scrollToID?: string
+    route: string;
 };
 
 const NavLinks = (): JSX.Element => {
     const [isActive, setIsActive] = useState<boolean>(false);
-    const [activeID, setActiveID] = useState<string>("");
 
     const pathname = usePathname();
 
@@ -27,12 +25,12 @@ const NavLinks = (): JSX.Element => {
         {
             id: useId(),
             routeName: "About Us",
-            scrollToID: "#about"
+            route: "/about"
         },
         {
             id: useId(),
             routeName: "Services",
-            scrollToID: "#services"
+            route: "/services"
         },
         {
             id: useId(),
@@ -42,7 +40,7 @@ const NavLinks = (): JSX.Element => {
         {
             id: useId(),
             routeName: "FAQs",
-            scrollToID: "#faqs"
+            route: "/faqs"
         },
     ];
 
@@ -50,26 +48,19 @@ const NavLinks = (): JSX.Element => {
         setIsActive(!isActive);
     };
 
+    useEffect(() => {
+        setIsActive(false);
+    }, [pathname]);
+
     return (
         <>
             <nav className={`absolute top-full bg-white border-b border-[#f5f8fa] p-4 w-full left-0 ${isActive ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-500 ease-in-out lg:border-0 lg:translate-x-0 lg:w-auto lg:static lg:p-0`}>
                 <ul className="flex flex-col gap-2 lg:gap-8 lg:flex-row lg:justify-between">
                     {navLinks.map((navLink: navLinks): JSX.Element => (
                         <li key={navLink.id}>
-                            {navLink.route ? (
-                                <Link className={`transition-colors duration-300 ease-in-out p-4 block border-b-[1.5px] ${pathname === navLink.route && activeID === "" ? 'font-bold text-brand-light-blue lg:text-brand-dark-purple lg:border-brand-dark-purple' : 'text-brand-light-purple border-transparent hover:text-brand-light-blue hover:font-bold lg:font-medium'} lg:hover:text-brand-dark-purple lg:hover:border-brand-dark-purple lg:p-2`} href={navLink.route} onClick={() => setActiveID("")}>
-                                    {navLink.routeName}
-                                </Link>
-                            ) : (
-                                <button className={`text-left transition-colors duration-300 ease-in-out p-4 block w-full border-b-[1.5px] ${activeID === navLink.id ? 'font-bold text-brand-light-blue lg:text-brand-dark-purple lg:border-brand-dark-purple' : 'text-brand-light-purple border-transparent hover:text-brand-light-blue hover:font-bold lg:font-medium'} lg:hover:text-brand-dark-purple lg:hover:border-brand-dark-purple lg:p-2`} type="button" onClick={() => {
-                                    setActiveID(navLink.id);
-                                    handleNavToggle();
-
-                                    document.querySelector(navLink.scrollToID ? navLink.scrollToID : "")?.scrollIntoView({ behavior: "smooth" });
-                                }}>
-                                    {navLink.routeName}
-                                </button>
-                            )}
+                            <Link className={`transition-colors duration-300 ease-in-out p-4 block border-b-[1.5px] ${pathname === navLink.route ? 'font-bold text-[#3366ff] border-[#3366ff]' : 'text-brand-light-purple border-transparent hover:text-[#3366ff] hover:font-bold lg:font-medium'} hover:text-[#3366ff] hover:border-[#3366ff] lg:p-2`} href={navLink.route}>
+                                {navLink.routeName}
+                            </Link>
                         </li>
                     ))}
 

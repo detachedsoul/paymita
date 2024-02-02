@@ -37,7 +37,7 @@ export default function RootLayout({
                 />
             </head>
 
-            <body className={`${urbanist.className} text-base leading-[160%] text-[#384860] antialiased text-balance selection:bg-brand-dark-purple selection:text-white scroll-smooth`}>
+            <body className={`${urbanist.className} text-base leading-[160%] text-[#384860] antialiased selection:bg-brand-dark-purple selection:text-white scroll-smooth`}>
                 <Header />
 
                 {children}

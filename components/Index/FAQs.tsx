@@ -16,8 +16,8 @@ const FAQs = (): JSX.Element => {
                 </div>
 
                 <div className="inline-block">
-                    <Link className="py-4 inline-block px-8 rounded-[2.75rem] bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] text-white text-sm font-medium hover:bg-[linear-gradient(95deg,_#2A2C60_-5.03%,_#67B3E4_101.09%)] transition-all duration-300" href="">
-                        Read More FAQs
+                    <Link className="py-4 inline-block px-8 rounded-[2.75rem] bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] text-white text-sm font-medium hover:bg-[linear-gradient(95deg,_#2A2C60_-5.03%,_#67B3E4_101.09%)] transition-all duration-300" href="/contact">
+                        Contact Us
                     </Link>
                 </div>
             </div>
