@@ -5,7 +5,7 @@ import Logo from "@/assets/img/logo.svg";
 
 const Header = (): JSX.Element => {
     return (
-        <header className="bg-white flex items-center justify-between gap-4 py-5 px-4 border-b border-[#f5f8fa] sticky top-0 lg:py-4 lg:px-20">
+        <header className="bg-white flex items-center justify-between gap-4 py-5 px-4 border-b border-[#f5f8fa] sticky top-0 z-50 lg:py-4 lg:px-20">
             <Link href="/">
                 <Image src={Logo} alt="Paymita" />
             </Link>

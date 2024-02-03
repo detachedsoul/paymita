@@ -14,4 +14,8 @@
     .header {
         @apply text-3xl font-bold leading-[120%] text-brand-dark-purple lg:text-5xl lg:leading-[120%]
     }
+
+    .input-form {
+        @apply form-input border border-[#babcd9] bg-[#f8f8fa] placeholder:text-[#8c939e] rounded-sm py-[0.813rem] px-4 focus:border-[#babcd9] focus:outline-[#babcd9] focus:ring-0 w-full
+    }
 }
