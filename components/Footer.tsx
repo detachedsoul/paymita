@@ -77,7 +77,7 @@ const Footer = (): JSX.Element => {
 
             <div className="flex flex-col gap-8 pt-12 pb-16 justify-between items-center lg:flex-row">
                 <div className="flex items-center gap-10">
-                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/legals/terms-and-conditions">
+                    <Link className="text-[#4f627d] text-sm transition-colors duration-300 ease-in-out hover:font-bold hover:text-brand-dark-purple" href="/legal/terms-and-conditions">
                         Terms
                     </Link>
 
