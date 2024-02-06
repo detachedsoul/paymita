@@ -47,7 +47,7 @@ const ContactContainer = (): JSX.Element => {
 
                 <div className="grid gap-2 text-white">
                     <h3 className="font-semibold text-xl leading-normal">
-                        Follow us on the Media
+                        Follow us on social media
                     </h3>
 
                     <div className="flex items-center gap-4">

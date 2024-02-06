@@ -30,7 +30,7 @@ const ContactForm = (): JSX.Element => {
                     Phone Number
                 </span>
 
-                <input className="input-form" type="email" placeholder="Email phone number" id="phone-number" />
+                <input className="input-form" type="text" placeholder="Email phone number" id="phone-number" />
             </label>
 
             <label className="grid gap-2 lg:col-span-2" htmlFor="message">

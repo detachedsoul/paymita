@@ -18,4 +18,42 @@
     .input-form {
         @apply form-input border border-[#babcd9] bg-[#f8f8fa] placeholder:text-[#8c939e] rounded-sm py-[0.813rem] px-4 focus:border-[#babcd9] focus:outline-[#babcd9] focus:ring-0 w-full
     }
+
+    .accordion-container {
+        transition: grid-template-rows .5s;
+        display: grid;
+        overflow: hidden;
+    }
+
+    .accordion-container-hidden {
+        grid-template-rows: 0fr;
+    }
+
+    .accordion-container-active {
+        grid-template-rows: 1fr;
+    }
+
+    .accordion-content-container {
+        display: grid;
+        min-height: 0;
+        transition: visibility .5s;
+        align-self: flex-end;
+    }
+
+    .accordion-content-container-hidden {
+        visibility: hidden;
+    }
+
+    .accordion-content-container-active {
+        visibility: visible;
+    }
+
+    .custom-scrollbar {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        @apply hidden
+    }
 }
