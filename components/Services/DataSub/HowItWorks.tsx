@@ -36,7 +36,7 @@ const HowItWorks = (): JSX.Element => {
 
     return (
         <section className="grid gap-4 items-center py-12 bg-white px-4 lg:grid-cols-2 lg:px-20">
-            <Image className="text-center ml-[2.5%] lg:ml-0 lg:text-left" src={IndexHowItWork} alt="How It Works" />
+            <Image className="text-center ml-[2.5%] md:mx-auto md:w-4/5 lg:w-full lg:ml-0 lg:text-left" src={IndexHowItWork} alt="How It Works" />
 
             <div className="grid gap-14">
                 <div className="grid gap-10">
@@ -65,7 +65,7 @@ const HowItWorks = (): JSX.Element => {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 md:mx-auto lg:mx-0">
                     <Link href="">
                         <Image className="w-full h-1/2 lg:h-14" src={DownloadIOS} alt="Download our app from the iOS store" title="Download our app from the iOS store" />
                     </Link>

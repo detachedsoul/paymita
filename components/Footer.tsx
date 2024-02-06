@@ -5,8 +5,8 @@ import Logo from "@/assets/img/logo.svg";
 const Footer = (): JSX.Element => {
     return (
         <footer className="bg-white px-4 lg:px-20">
-            <div className="border-b-[0.1875rem] border-brand-dark-purple/[0.06] pt-16 pb-12 grid grid-cols-2 items-start justify-between gap-8 lg:grid-cols-4 lg:gap-16">
-                <div className="grid gap-6 col-span-2 lg:col-span-1">
+            <div className="border-b-[0.1875rem] border-brand-dark-purple/[0.06] pt-16 pb-12 grid grid-cols-2 items-start justify-between gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-16">
+                <div className="grid gap-6 col-span-2 md:col-span-3 lg:col-span-1">
                     <Image className="h-8" src={Logo} alt="Paymita" />
 
                     <p className="text-[#384860] leading-[160%]">

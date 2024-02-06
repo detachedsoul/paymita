@@ -5,7 +5,7 @@ const FAQs = (): JSX.Element => {
     return (
         <section className="grid gap-8 items-center bg-[#f8f8fa] py-12 px-4 scroll-mt-14 lg:scroll-mt-[4.5rem] lg:px-20 lg:grid-cols-12" id="faqs">
             <div className="grid gap-10 lg:col-span-5">
-                <div className="grid gap-4">
+                <div className="grid gap-4 md:text-center lg:text-left">
                     <h2 className="header">
                         FAQs: Got Questions? We’ve Got Answers!
                     </h2>
@@ -15,14 +15,14 @@ const FAQs = (): JSX.Element => {
                     </p>
                 </div>
 
-                <div className="inline-block">
+                <div className="inline-block md:mx-auto lg:mx-0">
                     <Link className="py-4 inline-block px-8 rounded-[2.75rem] bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] text-white text-sm font-medium hover:bg-[linear-gradient(95deg,_#2A2C60_-5.03%,_#67B3E4_101.09%)] transition-all duration-300" href="/contact">
                         Contact Us
                     </Link>
                 </div>
             </div>
 
-            <div className="grid gap-6 lg:col-span-7">
+            <div className="grid gap-6 items-start md:grid-cols-2 lg:grid-cols-1 lg:col-span-7">
                 <Accordion question="Is my information secure with Paymita?" answer={<p>Yes, your personal and financial information is secure with Paymita. We use advanced encryption technologies to protect your data.</p>} />
 
                 <Accordion question="What services can I pay for using Paymita’s virtual card?" answer={<p>Pay for data, airtime, cable subscriptions, electricity bills, and fund betting wallets seamlessly with Paymita’s virtual card.</p>} />

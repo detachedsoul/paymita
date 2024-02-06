@@ -33,7 +33,7 @@ const WhyChoosePaymita = (): JSX.Element => {
                     Why Choose Paymita
                 </h2>
 
-                <div className="grid gap-4">
+                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-1">
                     {whyPaymita.map((reason: whyPaymita): JSX.Element => (
                         <div className="grid gap-2 bg-white border border-[#cbd5e1] rounded-[1.25rem] p-6 hover:bg-brand-dark-purple group" key={reason.id}>
                             <h3 className="text-brand-light-purple font-semibold text-xl leading-normal group-hover:text-white transition-colors duration-300 ease-in-out">

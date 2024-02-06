@@ -4,8 +4,8 @@ import ContactForm from "@/components/Contact/ContactForm";
 const ContactContainer = (): JSX.Element => {
     return (
         <section className="grid gap-8 lg:grid-cols-2">
-            <div className="grid gap-8  px-4 py-8 bg-brand-dark-purple order-last lg:order-first lg:p-20">
-                <div className="grid gap-2 text-white">
+            <div className="grid gap-8 px-4 py-8 bg-brand-dark-purple order-last md:grid-cols-2 lg:grid-cols-1 lg:order-first lg:p-20">
+                <div className="grid gap-2 text-white md:col-span-2 lg:col-span-1">
                     <h2 className="font-semibold text-2xl text-brand-light-blue leading-normal">
                         Have any question or feedback?
                     </h2>
@@ -25,7 +25,7 @@ const ContactContainer = (): JSX.Element => {
                     </p>
                 </div>
 
-                <div className="grid gap-2 text-white">
+                <div className="grid gap-2 text-white md:ml-auto lg:ml-0">
                     <h3 className="font-semibold text-xl leading-normal">
                         Contact address
                     </h3>

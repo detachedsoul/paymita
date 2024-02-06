@@ -30,11 +30,11 @@ const OurUniqueTraits = (): JSX.Element => {
 
     return (
         <section className="grid gap-8 bg-white px-4 py-8 lg:p-20">
-            <h2 className="header">
+            <h2 className="header md:text-center lg:text-left">
                 What Sets Us Apart
             </h2>
 
-            <div className="grid gap-4 items-start lg:gap-8 lg:grid-cols-2">
+            <div className="grid gap-4 items-start md:grid-cols-2 lg:gap-8">
                 {uniquesTraits.map((trait: uniquesTraits): JSX.Element => (
                     <div className="grid gap-2" key={trait.id}>
                         <h3 className="text-brand-light-purple font-semibold text-xl leading-normal group-hover:text-white transition-colors duration-300 ease-in-out">

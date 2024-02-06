@@ -4,8 +4,8 @@ import VirtualCardImage from "@/assets/img/index-virtual-card.png";
 
 const VirtualCard = (): JSX.Element => {
     return (
-        <section className="grid scroll-mt-14 lg:scroll-mt-[4.5rem] lg:grid-cols-2" id="virtual-card">
-            <Image className="order-last lg:order-first lg:h-[32.9375rem]" src={VirtualCardImage} alt="Swift Payments with Virtual Cards" />
+        <section className="grid scroll-mt-14 lg:scroll-mt-[4.5rem] md:grid-cols-2" id="virtual-card">
+            <Image className="order-last lg:order-first md:h-full lg:h-[32.9375rem]" src={VirtualCardImage} alt="Swift Payments with Virtual Cards" />
 
             <div className="bg-white px-4 py-8 grid gap-[1.875rem] lg:pr-20 lg:pl-10 lg:py-12">
                 <div className="grid gap-5">

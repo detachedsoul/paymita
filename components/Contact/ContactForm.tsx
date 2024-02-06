@@ -1,6 +1,6 @@
 const ContactForm = (): JSX.Element => {
     return (
-        <form className="grid gap-6 bg-white px-4 py-8 lg:grid-cols-2 lg:py-20 lg:pr-20">
+        <form className="grid gap-6 bg-white px-4 py-8 md:grid-cols-2 lg:py-20 lg:pr-20">
             <label className="grid gap-2" htmlFor="first-name">
                 <span className="text-[#384860] text-lg">
                     First Name
@@ -33,7 +33,7 @@ const ContactForm = (): JSX.Element => {
                 <input className="input-form" type="text" placeholder="Email phone number" id="phone-number" />
             </label>
 
-            <label className="grid gap-2 lg:col-span-2" htmlFor="message">
+            <label className="grid gap-2 md:col-span-2" htmlFor="message">
                 <span className="text-[#384860] text-lg">
                     Message
                 </span>

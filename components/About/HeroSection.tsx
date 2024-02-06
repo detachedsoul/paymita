@@ -1,7 +1,7 @@
 const HeroSection = (): JSX.Element => {
     return (
         <div className="bg-[#e1f3ff] bg-right-top h-[352px] grid place-items-center lg:bg-[url(/about-hero.svg)]">
-            <div className="grid gap-4 text-center px-4 lg:px-0">
+            <div className="grid gap-4 text-center px-4 md:w-4/5 md:mx-auto lg:w-full lg:mx-0 lg:px-0">
                 <h1 className="text-[2.5rem] text-brand-dark-purple font-bold leading-[110%] lg:text-[3.5rem]">
                     About Us
                 </h1>

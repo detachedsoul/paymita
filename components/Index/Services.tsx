@@ -79,7 +79,7 @@ const Services = (): JSX.Element => {
                 </p>
             </div>
 
-            <div className="grid gap-4 lg:grid-cols-3">
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                 {services.map((service: services): JSX.Element => (
                     <div className="rounded-[1.25rem] bg-white p-8 grid gap-10 shadow-3xl transition-colors duration-300 ease-in-out group/card hover:bg-brand-dark-purple" key={service.id}>
                         <div className="grid gap-4">

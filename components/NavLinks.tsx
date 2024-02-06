@@ -66,7 +66,7 @@ const NavLinks = (): JSX.Element => {
 
     return (
         <>
-            <nav className={`absolute top-full bg-white border-b border-[#f5f8fa] p-4 w-full left-0 ${isActive ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-500 ease-in-out lg:border-0 lg:translate-x-0 lg:w-auto lg:static lg:p-0`}>
+            <nav className={`absolute top-full bg-white border-b border-[#f5f8fa] p-4 w-full left-0 ${isActive ? 'translate-x-0' : '-translate-x-[200%]'} transition-transform duration-500 ease-in-out md:w-1/2 md:left-1/4 lg:border-0 lg:translate-x-0 lg:w-auto lg:static lg:p-0`}>
                 <ul className="flex flex-col gap-2 lg:gap-8 lg:flex-row lg:justify-between">
                     {navLinks.map((navLink: navLinks): JSX.Element => (
                         <li className="relative" key={navLink.id}>

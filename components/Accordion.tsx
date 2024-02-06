@@ -24,7 +24,7 @@ const Accordion = ({ question, answer }: {question: string, answer: JSX.Element}
                 {isExpanded ? <MinusIcon /> : <PlusIcon />}
             </button>
 
-            <div className={`grid transition-all ease-linear duration-300 ${isExpanded ? 'pt-4 [grid-template-rows:1fr]' : 'pt-0 [grid-template-rows:0fr]'}`}>
+            <div className={`grid transition-all ease-linear ${isExpanded ? 'pt-4 [grid-template-rows:1fr]' : 'pt-0 [grid-template-rows:0fr]'}`}>
                 <div className={`overflow-hidden`}>
                     {answer}
                 </div>
