@@ -27,9 +27,9 @@ const FAQs = (): JSX.Element => {
 
                 <Accordion question="What services can I pay for using Paymita’s virtual card?" answer={<p>Pay for data, airtime, cable subscriptions, electricity bills, and fund betting wallets seamlessly with Paymita’s virtual card.</p>} />
 
-                <Accordion question="How can I contact Paymita’s customer support?" answer={<p>For assistance, visit <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple" href="">“Contact Us”</Link> on the website. Reach us through live chat, email, or phone for prompt and helpful support.</p>} />
+                <Accordion question="How can I contact Paymita’s customer support?" answer={<p>For assistance, visit <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple" href="/contact">“Contact Us”</Link> on the website. Reach us through live chat, email, or phone for prompt and helpful support.</p>} />
 
-                <Accordion question="How do I sign up for a Paymita account?" answer={<p>Signing up for Paymita is easy! download our app, click <Link className="text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple" href="">“Sign Up,”</Link> and follow the quick registration process. Provide the required details, and you’ll be ready to enjoy our services in no time.</p>} />
+                <Accordion question="How do I sign up for a Paymita account?" answer={<p>Signing up for Paymita is easy! download our app, click <span className="text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple">“Sign Up,”</span> and follow the quick registration process. Provide the required details, and you’ll be ready to enjoy our services in no time.</p>} />
 
                 <Accordion question="How quickly do funds reflect in my Paymita wallet?" answer={<p>Funds added to your wallet reflect instantly for swift transactions.</p>} />
             </div>

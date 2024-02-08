@@ -33,7 +33,7 @@ export default function RootLayout({
                 <link rel="icon" href="/favicon.svg" />
                 <meta
                     property="og:image"
-                    content="/favicon.svg"
+                    content="https://paymita.co/favicon.png"
                 />
             </head>
 

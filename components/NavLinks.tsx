@@ -97,7 +97,7 @@ const NavLinks = (): JSX.Element => {
                     <ul className={`hidden bg-white lg:grid gap-4 overflow-y-auto absolute top-[calc(100%+1.5rem)] w-full max-h-[80vh] shadow z-50 p-4 rounded-lg ${dropdownIsActive ? 'translate-y-0' : '-translate-y-[500%]'} lg:w-4/5 lg:left-[10%] custom-scrollbar transition-transform ease-in-out duration-500`}>
                         {dropdownLinks.map((dropdownLink: navLinks): JSX.Element => (
                             <li key={dropdownLink.id}>
-                                <Link className={`transition-colors ease-in-out duration-300 font-bold block rounded-lg p-2 ${pathname === dropdownLink.route ? 'bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] text-white' : 'hover:bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] hover:text-white'}`} href={dropdownLink.route}>
+                                <Link className={`transition-colors ease-in-out duration-300 font-bold block rounded-lg p-2 ${pathname === dropdownLink.route ? 'bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] text-white' : 'hover:bg-[linear-gradient(95deg,_#2A2C60_-5.03%,_#67B3E4_101.09%)] hover:text-white'}`} href={dropdownLink.route}>
                                     {dropdownLink.routeName}
                                 </Link>
                             </li>

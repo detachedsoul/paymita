@@ -32,8 +32,8 @@ const ContactContainer = (): JSX.Element => {
 
                     <div className="grid gap-4">
                         <p className="text-sm">
-                            <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-[#3366ff] hover:decoration-[#3366ff]" href="mailto:mitatechnology.africa@gmail.com" target="_blank" rel="noopener noreferrer">
-                                mitatechnology.africa@gmail.com
+                            <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-[#3366ff] hover:decoration-[#3366ff]" href="mailto:support@paymita.co" target="_blank" rel="noopener noreferrer">
+                                support@paymita.co
                             </Link>
                         </p>
 

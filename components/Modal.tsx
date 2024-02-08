@@ -19,7 +19,7 @@ const Modal = ({
             }`}
         >
             <div
-                className="h-auto z-[1024] my-8 w-[calc(100%-10%)] grid gap-2 rounded-[12px] bg-[#f2f2f2] text-[#666666] px-6 py-6 min-[500px]:w-3/5 min-[600px]:w-1/3"
+                className="h-auto z-[1024] my-8 w-[calc(100%-10%)] grid gap-2 rounded-[12px] bg-[#f2f2f2] text-[#666666] px-6 py-6 min-[500px]:w-1/2"
             >
                 <div className="flex items-center justify-end bg-[#f2f2f2] text-[#666666]">
 
