@@ -1,15 +1,28 @@
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Paymita | Terms & Conditions of Use',
+    title: "Paymita | Terms and conditions of using our platform.",
     description: "Terms and conditions of using our platform."
 };
 
 const Terms = (): JSX.Element => {
     return (
         <>
-            <h1 className="header text-center mb-10">
+            <Breadcrumbs>
+                <span className="font-bold">
+                    Legal
+                </span>
+
+                /
+
+                <span>
+                    Terms & Conditions of Use
+                </span>
+            </Breadcrumbs>
+
+            <h1 className="header text-center my-10">
                 Terms of Use
             </h1>
 
@@ -152,7 +165,7 @@ const Terms = (): JSX.Element => {
                     </h3>
 
                     <p className="text-brand-light-purple">
-                        If you have any questions or concerns regarding this Terms of Use, please contact us at <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple" href="mailto:mitatechnology.africa@gmail.com">mitatechnology.africa@gmail.com</Link>
+                        If you have any questions or concerns regarding this Terms of Use, please contact us at <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple" href="mailto:support@paymita.co">support@paymita.co</Link>
                     </p>
 
                     <p>

@@ -13,23 +13,21 @@ const HeroSection = (): JSX.Element => {
                 </h1>
 
                 <p className="text-wrap md:text-center lg:text-left">
-                    Experience unparalleled simplicity in managing your financial transactions — from converting airtime to cash to seamless bill payments and betting wallet funding.
+                    Experience unparalleled simplicity in managing your financial transactions — from converting airtime to cash to seamless bill payments and affordable Internet data plans.
                 </p>
 
                 <div className="flex items-center gap-4 md:mx-auto lg:mx-0">
                     <Link href="">
-                        <Image className="w-full h-1/2 lg:h-14" src={DownloadIOS} alt="Download our app from the iOS store" title="Download our app from the iOS store" />
+                        <Image className="w-full h-1/2 lg:h-14" src={DownloadIOS} alt="Download our app from the iOS store" title="Download our app from the iOS store" priority={true} />
                     </Link>
 
                     <Link href="">
-                        <Image className="w-full h-1/2 lg:h-14" src={DownloadAndroid} alt="Download our app from the android playstore" title="Download our app from the android playstore" />
+                        <Image className="w-full h-1/2 lg:h-14" src={DownloadAndroid} alt="Download our app from the android playstore" title="Download our app from the android playstore" priority={true} />
                     </Link>
                 </div>
             </div>
 
-            <div>
-                <Image src={IndexHeroImage} alt="Paymita - Your Gateway to Effortless & Swift Payments." priority fetchPriority="high" />
-            </div>
+            <Image src={IndexHeroImage} alt="Paymita - Your Gateway to Effortless & Swift Payments." priority={true} quality={100} fetchPriority="high" placeholder="blur" loading="eager" />
         </div>
     );
 };

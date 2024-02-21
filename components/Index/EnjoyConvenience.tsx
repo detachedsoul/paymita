@@ -28,7 +28,7 @@ const EnjoyConvenience = (): JSX.Element => {
             </div>
 
             <div className="lg:col-span-6 lg:h-[35.5rem]">
-                <Image className="h-full w-full object-center" src={IndexEnjoyConvenience} alt="Experience convenience at your fingertips. Download the Paymita app today." />
+                <Image className="h-full w-full object-center" src={IndexEnjoyConvenience} alt="Experience convenience at your fingertips. Download the Paymita app today." fetchPriority="high" quality={100} placeholder="blur" />
             </div>
         </section>
     );

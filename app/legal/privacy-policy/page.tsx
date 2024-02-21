@@ -1,19 +1,32 @@
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Paymita | Privacy Policy',
+    title: "Paymita | Paymita's privacy policy.",
     description: "Paymita's privacy policy."
 };
 
 const Terms = (): JSX.Element => {
     return (
         <>
-            <h1 className="header text-center mb-10">
+            <Breadcrumbs>
+                <span className="font-bold">
+                    Legal
+                </span>
+
+                /
+
+                <span>
+                    Privacy Policy
+                </span>
+            </Breadcrumbs>
+
+            <h1 className="header text-center my-10">
                 Privacy Policy
             </h1>
 
-            <div className="bg-white grid gap-5 rounded-xl p-8 mx-4 lg:mx-20 lg:px-20 lg:pt-10">
+            <section className="bg-white grid gap-5 rounded-xl p-8 mx-4 lg:mx-20 lg:px-20 lg:pt-10">
                 <div className="grid gap-4">
                     <h2 className="header text-xl leading-[22px]">
                         Effective Date: February, 2024
@@ -151,14 +164,14 @@ const Terms = (): JSX.Element => {
                     </h3>
 
                     <p className="text-brand-light-purple">
-                        If you have any questions or concerns regarding this Privacy Policy, please contact us at <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple" href="mailto:mitatechnology.africa@gmail.com">mitatechnology.africa@gmail.com</Link>
+                        If you have any questions or concerns regarding this Privacy Policy, please contact us at <Link className=" text-brand-light-blue font-bold underline underline-offset-4 decoration-wavy hover:text-brand-light-purple hover:decoration-brand-dark-purple" href="mailto:support@paymita.co">support@paymita.co</Link>
                     </p>
 
                     <p>
                         Thank you for choosing Paymita.
                     </p>
                 </div>
-            </div>
+            </section>
         </>
     );
 };

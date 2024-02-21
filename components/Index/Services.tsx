@@ -25,7 +25,7 @@ const Services = (): JSX.Element => {
         {
             id: useId(),
             icon: AirtimeToCashIcon,
-            header: "Instant Airtime to Cash",
+            header: "Buy Airtime",
             cardBody: "Buy airtime for your mobile phone on the go, ensuring you're always connected without hassle.",
             buttonText: "Get started",
         },
@@ -33,21 +33,21 @@ const Services = (): JSX.Element => {
             id: useId(),
             icon: BuyDataIcon,
             header: "Buy Data",
-            cardBody: "Never run out of data again, buy data speedily and seamlessly.",
+            cardBody: "Never run out of data plan, buy affordable data speedily and seamlessly. E.g MTN, AIRTEL, GLO and 9mobile.",
             buttonText: "Get started",
         },
         {
             id: useId(),
             icon: PayBillsIcon,
             header: "Pay Bills",
-            cardBody: "Pay bills without stress, swiftly and seamlessly pay your bills with Paymita.",
+            cardBody: "Pay bills without stress, swiftly and seamlessly pay your bills with Paymita. E.g electricity and cable subscription.",
             buttonText: "Get started",
         },
         {
             id: useId(),
             icon: VirtualCardIcon,
             header: "Swift Virtual Card",
-            cardBody: "Safely make digital payments with our virtual cards.",
+            cardBody: "Safely make digital payments with our Visa and Master virtual dollar and Naira cards.",
             buttonText: "Learn more",
             isScrollTrigger: true
         },
@@ -61,8 +61,8 @@ const Services = (): JSX.Element => {
         {
             id: useId(),
             icon: BettingIcon,
-            header: "Betting",
-            cardBody: "Easily deposit and withdraw funds from any betting platform without any hassle.",
+            header: "Airtime to Cash",
+            cardBody: "Convert your airtime to cash easily and get paid instantly.",
             buttonText: "Get started",
         },
     ];

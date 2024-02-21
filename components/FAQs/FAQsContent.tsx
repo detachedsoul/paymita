@@ -21,7 +21,7 @@ const FAQsContent = (): JSX.Element => {
         {
             id: useId(),
             routeName: "General",
-            route: "/faqs"
+            route: "/faqs/"
         }
     ];
 

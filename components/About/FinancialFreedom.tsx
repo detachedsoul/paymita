@@ -4,7 +4,7 @@ import FinancialFreedomImage from "@/assets/img/financial-freedom.png";
 const FinancialFreedom = (): JSX.Element => {
     return (
         <section className="grid bg-[#e1f3ff] lg:grid-cols-2 lg:items-center">
-            <Image className="order-last lg:order-first lg:h-[32.9375rem]" src={FinancialFreedomImage} alt="Empowering Financial Freedom" />
+            <Image className="order-last lg:order-first lg:h-[32.9375rem]" src={FinancialFreedomImage} alt="Empowering Financial Freedom" fetchPriority="high" quality={100} placeholder="blur" />
 
             <div className="px-4 py-8 grid gap-5 md:text-center md:w-4/5 md:mx-auto lg:text-left lg:w-full lg:mx-0 lg:pr-20 lg:pl-10 lg:py-12">
                 <h2 className="header">

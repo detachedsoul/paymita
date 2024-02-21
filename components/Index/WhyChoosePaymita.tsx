@@ -1,5 +1,5 @@
 import Image from "next/image";
-import WhyPaymita from "@/assets/img/why-choose-paymita.svg";
+import WhyPaymita from "@/assets/img/why-choose-paymita.png";
 
 type whyPaymita = {
     id: number,
@@ -48,7 +48,7 @@ const WhyChoosePaymita = (): JSX.Element => {
                 </div>
             </div>
 
-            <Image className="w-full h-full" src={WhyPaymita} alt="Why choose Paymita" />
+            <Image className="w-full h-full" src={WhyPaymita} alt="Why choose Paymita" fetchPriority="high" quality={100} placeholder="blur" loading="eager" />
         </section>
     );
 };

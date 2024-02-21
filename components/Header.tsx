@@ -1,3 +1,5 @@
+"use client";
+
 import NavLinks from "@/components/NavLinks";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,9 +7,9 @@ import Logo from "@/assets/img/logo.svg";
 
 const Header = (): JSX.Element => {
     return (
-        <header className="bg-white flex items-center justify-between gap-4 py-5 px-4 border-b border-[#f5f8fa] sticky top-0 z-50 lg:py-4 lg:px-20">
-            <Link href="/">
-                <Image src={Logo} alt="Paymita" />
+        <header className="bg-white relative flex items-center justify-between gap-4 py-5 px-4 border-b border-[#f5f8fa] z-50 lg:py-4 lg:px-20">
+            <Link href="https://paymita.co/" onClick={() => window.location.href = "https://paymita.co/"}>
+                <Image src={Logo} alt="Paymita" priority={true} fetchPriority="high" />
             </Link>
 
             <NavLinks />

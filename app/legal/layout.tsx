@@ -3,7 +3,7 @@ import FAQs from "@/components/Index/FAQs";
 
 const Layout = ({ children }: {children: React.ReactNode}): JSX.Element => {
     return (
-        <main className="bg-[#e1f3ff] pt-10">
+        <main className="bg-[#e1f3ff]">
             {children}
 
             <EnjoyConvenience />

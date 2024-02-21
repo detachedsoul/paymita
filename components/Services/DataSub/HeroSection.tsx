@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import IndexHeroImage from "@/assets/img/data-sub-hero-image.png";
+import HeroImage from "@/assets/img/data-sub-hero-image.png";
 import DownloadIOS from "@/assets/img/download-ios.svg";
 import DownloadAndroid from "@/assets/img/download-android.svg";
 
@@ -33,9 +33,7 @@ const HeroSection = (): JSX.Element => {
                 </div>
             </div>
 
-            <div>
-                <Image src={IndexHeroImage} alt="Paymita - Your Gateway to Effortless & Swift Payments." priority fetchPriority="high" />
-            </div>
+            <Image src={HeroImage} alt="Explore Seamless Data Subscriptions." priority={true} fetchPriority="high" quality={100} placeholder="blur" loading="eager" />
         </div>
     );
 };
