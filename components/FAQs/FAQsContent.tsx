@@ -32,7 +32,7 @@ const FAQsContent = (): JSX.Element => {
     return (
         <>
             <section className="grid gap-8 items-start bg-white px-4 py-8 lg:grid-cols-12 lg:p-20">
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1 lg:col-span-7">
+                <div className="grid gap-6 items-start md:grid-cols-2 lg:grid-cols-1 lg:col-span-7">
                     <Accordion question="Is my information secure with Paymita?" answer={<p>Yes, your personal and financial information is secure with Paymita. We use advanced encryption technologies to protect your data.</p>} />
 
                     <Accordion question="What services can I pay for using Paymita’s virtual card?" answer={<p>Pay for data, airtime, cable subscriptions, electricity bills, and fund betting wallets seamlessly with Paymita’s virtual card.</p>} />

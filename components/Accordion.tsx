@@ -1,12 +1,10 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { PlusIcon, MinusIcon } from "lucide-react";
 
 const Accordion = ({ question, answer }: {question: string, answer: JSX.Element}): JSX.Element => {
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
-
-    const content = useRef(null);
 
     const toggleAccordion = () => {
         setIsExpanded(!isExpanded);

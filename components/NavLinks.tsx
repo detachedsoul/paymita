@@ -52,7 +52,17 @@ const NavLinks = (): JSX.Element => {
             id: useId(),
             routeName: "Data Subscription",
             route: "/services/data-subscription/"
-        }
+        },
+        {
+            id: useId(),
+            routeName: "Airtime Purchase",
+            route: "/services/airtime-purchase/"
+        },
+        {
+            id: useId(),
+            routeName: "Pay Bills",
+            route: "/services/pay-bills/"
+        },
     ];
 
     const handleNavToggle = () => {
