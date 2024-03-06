@@ -63,6 +63,21 @@ const NavLinks = (): JSX.Element => {
             routeName: "Pay Bills",
             route: "/services/pay-bills/"
         },
+        {
+            id: useId(),
+            routeName: "Education Payments",
+            route: "/services/education-payment/"
+        },
+        {
+            id: useId(),
+            routeName: "Swift Virtual Card",
+            route: "/services/virtual-card/"
+        },
+        {
+            id: useId(),
+            routeName: "Betting",
+            route: "/services/betting/"
+        },
     ];
 
     const handleNavToggle = () => {
@@ -92,7 +107,7 @@ const NavLinks = (): JSX.Element => {
                                 )}
 
                                 {navLink.isDropdown && (
-                                    <ul className={`bg-white grid gap-4 overflow-y-auto absolute top-[calc(100%+0.5rem)] w-full max-h-[30vh] ${dropdownIsActive ? 'translate-y-0' : '-translate-y-[500%]'} shadow z-50 p-4 rounded-lg lg:w-4/5 lg:left-[10%] custom-scrollbar lg:hidden transition-transform ease-in-out duration-500`}>
+                                    <ul className={`bg-white grid gap-4 overflow-y-auto absolute top-[calc(100%+0.5rem)] w-full max-h-[30vh] ${dropdownIsActive ? 'translate-y-0' : '-translate-y-[500%]'} shadow z-50 p-4 rounded-lg custom-scrollbar lg:hidden transition-transform ease-in-out duration-500`}>
                                         {dropdownLinks.map((dropdownLink: navLinks): JSX.Element => (
                                             <li key={dropdownLink.id}>
                                                 <Link className={`transition-colors ease-in-out duration-300 font-bold block rounded-lg p-2 ${pathname === dropdownLink.route ? 'bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] text-white' : 'hover:bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] hover:text-white'}`} href={dropdownLink.route}>
@@ -106,7 +121,7 @@ const NavLinks = (): JSX.Element => {
                         ))}
                     </ul>
 
-                    <ul className={`hidden bg-white lg:grid gap-4 overflow-y-auto absolute top-[calc(100%+1.5rem)] w-full max-h-[80vh] shadow z-50 p-4 rounded-lg ${dropdownIsActive ? 'translate-y-0' : '-translate-y-[500%]'} lg:w-4/5 lg:left-[10%] custom-scrollbar transition-transform ease-in-out duration-500`}>
+                    <ul className={`hidden bg-white lg:grid gap-4 overflow-y-auto absolute top-[calc(100%+1.5rem)] w-full max-h-[80vh] shadow z-50 p-4 rounded-lg ${dropdownIsActive ? 'translate-y-0' : '-translate-y-[500%]'} lg:w-3/5 lg:left-[20%] custom-scrollbar transition-transform ease-in-out duration-500`}>
                         {dropdownLinks.map((dropdownLink: navLinks): JSX.Element => (
                             <li key={dropdownLink.id}>
                                 <Link className={`transition-colors ease-in-out duration-300 font-bold block rounded-lg p-2 ${pathname === dropdownLink.route ? 'bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)] text-white' : 'hover:bg-[linear-gradient(95deg,_#2A2C60_-5.03%,_#67B3E4_101.09%)] hover:text-white'}`} href={dropdownLink.route}>

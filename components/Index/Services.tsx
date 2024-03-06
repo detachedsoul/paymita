@@ -28,6 +28,7 @@ const Services = (): JSX.Element => {
             header: "Buy Airtime",
             cardBody: "Buy airtime for your mobile phone on the go, ensuring you're always connected without hassle.",
             buttonText: "Get started",
+            route: "/services/airtime-purchase/"
         },
         {
             id: useId(),
@@ -35,6 +36,7 @@ const Services = (): JSX.Element => {
             header: "Buy Data",
             cardBody: "Never run out of data plan, buy affordable data speedily and seamlessly. E.g MTN, AIRTEL, GLO and 9mobile.",
             buttonText: "Get started",
+            route: "/services/data-subscription/"
         },
         {
             id: useId(),
@@ -42,6 +44,7 @@ const Services = (): JSX.Element => {
             header: "Pay Bills",
             cardBody: "Pay bills without stress, swiftly and seamlessly pay your bills with Paymita. E.g electricity and cable subscription.",
             buttonText: "Get started",
+            route: "/services/pay-bills/"
         },
         {
             id: useId(),
@@ -49,7 +52,7 @@ const Services = (): JSX.Element => {
             header: "Swift Virtual Card",
             cardBody: "Safely make digital payments with our Visa and Master virtual dollar and Naira cards.",
             buttonText: "Learn more",
-            isScrollTrigger: true
+            route: "/services/virtual-card/"
         },
         {
             id: useId(),
@@ -57,6 +60,7 @@ const Services = (): JSX.Element => {
             header: "Education",
             cardBody: "Generate Result Checker Pins for instant use on the Paymita app (WAEC, NECO, NABTEB, etc).",
             buttonText: "Get started",
+            route: "/services/education-payment/"
         },
         {
             id: useId(),
@@ -64,6 +68,7 @@ const Services = (): JSX.Element => {
             header: "Airtime to Cash",
             cardBody: "Convert your airtime to cash easily and get paid instantly.",
             buttonText: "Get started",
+            route: "/services/betting/"
         },
     ];
 
@@ -108,7 +113,7 @@ const Services = (): JSX.Element => {
                                     </svg>
                                 </button>
                             ) : (
-                                <Link className="rounded-[2.75rem] border border-[rgba(42,_44,_96,_0.40)] inline-flex py-3 px-4 items-center gap-4 font-medium text-sm text-brand-dark-purple w-auto hover:bg-brand-dark-purple hover:text-white duration-300 ease-in-out transition-colors group group-hover/card:border-[#f8f8fa] group-hover/card:text-[#f8f8fa] hover:group-hover/card:bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)]" href="">
+                                <Link className="rounded-[2.75rem] border border-[rgba(42,_44,_96,_0.40)] inline-flex py-3 px-4 items-center gap-4 font-medium text-sm text-brand-dark-purple w-auto hover:bg-brand-dark-purple hover:text-white duration-300 ease-in-out transition-colors group group-hover/card:border-[#f8f8fa] group-hover/card:text-[#f8f8fa] hover:group-hover/card:bg-[linear-gradient(95deg,_#67B3E4_-5.03%,_#2A2C60_101.09%)]" href={service?.route ? service?.route : ""}>
                                     {service.buttonText}
 
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
